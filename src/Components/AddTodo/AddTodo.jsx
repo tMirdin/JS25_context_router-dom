@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { taskContext } from "../../context/TodoContext";
 
 const AddTodo = () => {
+  const value = useContext(taskContext);
   return (
     <div>
       <input type="text" />
